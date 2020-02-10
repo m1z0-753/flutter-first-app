@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _counter++;
       if (_counter % 3 == 0) {
-        _neverSatisfied(context, _counter);
+        _neverSatisfied(context, '$_counter');
       }
     });
   }
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-Future<void> _neverSatisfied(context, _counter) async {
+Future<void> _neverSatisfied(context, count) async {
   return showDialog<void>(
     context: context,
     barrierDismissible: false, // user must tap button!
@@ -91,7 +91,7 @@ Future<void> _neverSatisfied(context, _counter) async {
           child: ListBody(
             children: <Widget>[
               Text('ボタンを押した回数が'),
-              Text('$_counter' + '回になりました'),
+              Text(count + '回になりました'),
             ],
           ),
         ),
