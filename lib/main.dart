@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 // void main() => runApp(MyApp());
 void main() {
@@ -74,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // onPressed: () => _incrementCounter(),
         // onPressed: () { _incrementCounter(); },
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: new Icon(FontAwesomeIcons.google),
       ),
     );
   }
