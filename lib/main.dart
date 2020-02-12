@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// これで使える状態にはなった
+import 'package:nem2_sdk_dart/nem2_sdk_dart.dart';
 
 // void main() => runApp(MyApp());
 void main() {
